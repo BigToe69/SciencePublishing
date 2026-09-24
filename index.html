@@ -1,50 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style>
-      *{
-       border-radius:10px; 
-       font-family:'Times New Roman', Times, serif;
-      }
-      body{
-        background-color: black;
-        color: white;
-        margin: auto;
-      }
-
-      ul{
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #131313;
-
-      }
-      ul li {
-        float:left;
-      }
-      ul li a{
-        padding: 14px 16px;
-        text-decoration:none;
-        text-align: center;
-        color: white;
-      }
-      ul li a:hover{
-        background-color: #161616;
-      }
-      ul li a:active{
-        background-color: #0000FF
-      }
-    </style>
+    <title>ScienceOcean</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <ul>
-      <li><a href="index">Home</a></li>
-      <li><a href="articles.html">Articles</a></li>
-      <li><a href="about.html">About</a></li>
-    </ul>
-
-    <h1>ScienceOpen</h1>
-    <p>Home message!</p>
+    <div class="topnav">
+      <a class="active" href="index.html">Home</a>
+      <a href="about.html">About</a>
+    </div>
+    <div class="pagecontent">
+      <section id="home">
+        <h1>Home</h1>
+        <search>
+        <input id="searchbar" type="text" placeholder="Search..">
+        <button onclick="SearchForArticles()">search</button>
+      </search>
+      </section>
+      
+      <script src="script.js"></script>
+    </div>
   </body>
 </html>
